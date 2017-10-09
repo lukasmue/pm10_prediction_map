@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(dplyr)\n\n#allzips <- readRDS(\"data/superzip.rds\")\n#allzips$latitude <- jitter(allzips$latitude)\n#allzips$longitude <- jitter(allzips$longitude)\n#allzips$college <- allzips$college * 100\n#allzips$zipcode <- formatC(allzips$zipcode, width=5, format=\"d\", flag=\"0\")\nrow.names(allzips) <- allzips$zipcode\n\nallsensors <- read.csv(\"data/forecast.csv\",header = TRUE, sep = \",\", dec=\".\")\n\ncountries <- allsensors %>%\n  distinct(\n    country = country,\n    city = city\n  )\n\nprint (countries$country)\n\ncleansensors <- allsensors %>% \n  select(\n    SensorID = sensor_id,\n    PM10_Forecast = PM10,\n    Temperature = temp,\n    Humidity = humidity,\n    Rain = rain_3h,\n    Wind_Speed = wind_speed,\n    Wind_Degreee = wind_deg,\n    PM10_Floating_Average = PM10_average,\n    City = city,\n    Country = country,\n    Lat = latitude,\n    Long = longitude\n  )\n\n#cleantable <- allzips %>%\n#  select(\n#    City = city.x,\n#    State = state.x,\n#    Zipcode = zipcode,\n#    Rank = rank,\n#    Score = centile,\n#    Superzip = superzip,\n#    Population = adultpop,\n#    College = college,\n#    Income = income,\n#    Lat = latitude,\n#    Long = longitude\n#  )#",
+    "created" : 1505907777098.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3832706283",
+    "id" : "CCC3ACD1",
+    "lastKnownWriteTime" : 1507550021,
+    "last_content_update" : 1507550021431,
+    "path" : "~/Dropbox/projects/map_r/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

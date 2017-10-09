@@ -7,6 +7,11 @@ This project was part of my internship at the company MHP Management und IT-Bera
 
 **Keywords**: #Hadoop, #machineLearning, #particularMatter, #airQuality, #MHP, #predictiveAnalysis, #ETLprocess, #BigData, #analytics, #ApacheSpark, #internship, #R
 
+## Screenshot
+
+![alt text](https://github.com/lukasmue/pm10_prediction_map/blob/master/images/sensormap.png "Logo Title Text 1")
+
+
 ## Running the code
 
 Just clone the repository and open the ```map_r.Rproj ``` file in R-Studio

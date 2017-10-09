@@ -22,7 +22,7 @@ I used git for versioning. For the versions available, see the [tags](https://gi
 See also the list of [contributors](https://github.com/lukasmue/pm10_prediction_map/graphs/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/lukasmue/pm10_prediction_map/blob/master/LICENSE.md) file for details
 
 ## Further reading
 * [A template to make good README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
